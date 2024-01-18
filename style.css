@@ -1,0 +1,38 @@
+.main{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.btn{
+    display: flex;
+    padding: 2rem;
+}
+
+button{
+    padding: 0.5rem 1.5rem;
+    /* margin: 1rem; */
+    background-color: blue;
+    color: red;
+}
+
+table{
+    border: 2px solid black;
+    padding: 4rem 2rem;
+    background-color: lightskyblue;
+}
+
+button:hover{
+    background-color: green;
+    color: wheat;
+}
+
+input{
+    height: 30px;
+}

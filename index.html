@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/trainingnoteappstyle/style.css">
+</head>
+
+<body>
+    <h1 class="main">
+        Cybage Technology Enabled Program -.Net Batch
+    </h1>
+    <div class="table">
+
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Enter Topic id : </h3>
+                </td>
+                <td><input type="number" id="id"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Topic to be Covered : </h3>
+                </td>
+                <td><input type="text"  id="topic_to_be_covered"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>What all was covered</h3>
+                </td>
+                <td><input type="text" id="what_all_was_covered"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Date of Coverage : </h3>
+                </td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Topic Tasks Given : </h3>
+                </td>
+                <td>
+                      <input type="radio" id="yes" name="tasks" value="yes">
+                      <label for="yes">Yes</label><br>
+                      <input type="radio" id="no" name="tasks" value="no">
+                      <label for="no">No</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Questions I Asked During Session : </h3>
+                </td>
+                <td><input type="text" id="questions"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Challenges I Encountered While Solving Tasks : </h3>
+                </td>
+                <td><input type="text" id="challenges"></td>
+            </tr>
+
+
+
+
+
+            
+
+
+
+        </table>
+        <div class="btn">
+            <button onclick="record();">Submit</button>
+            <button id="clear" ">Clear All</button>
+        </div>
+        
+
+    </div>
+    <script src="/assets/trainingnotesappscripts/index.js"></script>
+    <script>
+
+        document.getElementById('clear').addEventListener('click',function(){
+            var arr = document.querySelectorAll('.table input');
+            arr.forEach(ele =>{
+                ele.value='';
+            })
+        })
+        
+    </script>
+</body>
+
+</html>
