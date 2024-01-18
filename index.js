@@ -18,7 +18,10 @@ function record() {
     })
 
     var current = new Date();
-    localStorage.setItem(current,obj);
+    var text = current.toString();
+    
+    var date = text.substring(4,15);
+    localStorage.setItem(date,obj);
 
 }
 
